@@ -93,17 +93,6 @@ public class RoomService {
         roomRepo.save(room);
     }
 
-//    /**
-//     * The method changes the room parameter sleeps in the Room database to new ones
-//     * @param roomId  room id
-//     * @param sleeps  room sleeps
-//     */
-//    public void changeRoomSleeps(int roomId, int sleeps) {
-//        Room room = roomRepo.findByNumber(roomId);
-//        room.setSleeps(sleeps);
-//        roomRepo.save(room);
-//    }
-
     /**
      * The method makes a specification of rooms by type and capacity from a given list of rooms
      * @param rooms  list of Rooms

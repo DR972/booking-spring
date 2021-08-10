@@ -37,10 +37,11 @@ public class MailSender {
 
     /**
      * The method sends a message and a file by email
-     * @param emailTo  recipient's postal address
-     * @param subject  message description
-     * @param message  message
-     * @param attachment  file path
+     *
+     * @param emailTo    recipient's postal address
+     * @param subject    fileName
+     * @param message    message
+     * @param attachment file path
      * @throws MessagingException if the message cannot be created
      */
     public void sendMailWithAttachment(String emailTo, String subject, String message, String attachment) throws MessagingException {

@@ -17,17 +17,17 @@ import org.springframework.stereotype.Service;
 public class Invoice {
     /**
      * The method creates the "Invoice" file
-     * @param reservation  reservation
-     * @param name  file name
-     * @param path  file path
-     * @param amount  room price
+     *
+     * @param reservation reservation
+     * @param path        file path
+     * @param amount      room price
      * @throws IOException if the invoice cannot be created
      */
-    public void createInvoice(Reservation reservation, String name, String path, double amount) throws IOException {
+    public void createInvoice(Reservation reservation, String path, double amount) throws IOException {
         Document doc = new Document(new PdfDocument(new PdfWriter(path)));
-        doc.setFont(PdfFontFactory.createFont("src/main/resources/static/myFont.ttf","Cp1251"));
+        doc.setFont(PdfFontFactory.createFont("src/main/resources/static/myFont.ttf", "Cp1251"));
         doc.add(new Paragraph("Резвизиты отеля\n\n\n"));
-        float[] pointColumnWidths = {10F, 100F,100F, 100F, 80F, 80F};
+        float[] pointColumnWidths = {10F, 100F, 100F, 100F, 80F, 80F};
         Table table = new Table(pointColumnWidths);
 
         table.addCell(new Cell().add("№"));

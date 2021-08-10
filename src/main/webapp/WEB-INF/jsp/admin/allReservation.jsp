@@ -64,7 +64,7 @@
                             <td>${reservation.status}</td>
                             <td>
                                 <c:if test = "${roomService.findByNumber(reservation.number) != null}">
-                                    <form>
+                                    <form action="allReservation" method="POST">
                                         <select class="StatusReservation" id ="status" name ="status">
                                             <option value="${reservation.status}">- Изменить -</option>
                                             <c:forEach items="<%=StatusReservation.values()%>" var="st">
@@ -78,7 +78,7 @@
                                  </c:if>
                             </td>
                             <td>
-                                <form>
+                                <form action="allReservation" method="POST">
                                     <input type="hidden" name="reservationId" value="${reservation.id}"/>
                                     <input type="hidden" name="delete" value="delete"/>
                                     <button type="submit">Удалить</button>

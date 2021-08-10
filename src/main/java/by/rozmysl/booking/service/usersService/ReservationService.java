@@ -94,7 +94,7 @@ public class ReservationService {
             String fileName = reservationId + ".pdf";
             String filePath = "src/main/resources/static/" + fileName;
             if (statusReservation.equals("СЧЕТ")) {
-                invoice.createInvoice(reservationRepo.findById(reservationId).get(), fileName, filePath,
+                invoice.createInvoice(reservationRepo.findById(reservationId).get(), filePath,
                         roomService.findByNumber(reservation.getNumber()).getPrice());
                 mailSender.sendMailWithAttachment(userService.findUserById(reservation.getUser()).getEmail(), fileName,
                         "Счет во вложении", filePath);

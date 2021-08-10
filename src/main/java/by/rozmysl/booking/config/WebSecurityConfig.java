@@ -1,6 +1,3 @@
-/**
- * The class defines the Spring Security configuration
- */
 package by.rozmysl.booking.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +9,9 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
-
+/**
+ * The class defines the Spring Security configuration
+ */
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
