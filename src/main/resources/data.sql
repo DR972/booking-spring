@@ -1,0 +1,42 @@
+-- DML
+
+--MERGE INTO РОЛИ VALUES (1, 'Юзер');
+--MERGE INTO РОЛИ VALUES (2, 'Админ');
+--
+--MERGE INTO КОМНАТЫ VALUES (11, 50, 2, 'Стандарт');
+--MERGE INTO КОМНАТЫ VALUES (12, 50, 2, 'Стандарт');
+--MERGE INTO КОМНАТЫ VALUES (13, 50, 2, 'Стандарт');
+--MERGE INTO КОМНАТЫ VALUES (14, 75, 3, 'Стандарт');
+--MERGE INTO КОМНАТЫ VALUES (15, 50, 2, 'Стандарт');
+--MERGE INTO КОМНАТЫ VALUES (16, 80, 2, 'Полулюкс');
+--MERGE INTO КОМНАТЫ VALUES (17, 100, 3, 'Полулюкс');
+--MERGE INTO КОМНАТЫ VALUES (18, 75, 3, 'Стандарт');
+--
+--MERGE INTO КОМНАТЫ VALUES (21, 50, 2, 'Стандарт');
+--MERGE INTO КОМНАТЫ VALUES (22, 80, 2, 'Полулюкс');
+--MERGE INTO КОМНАТЫ VALUES (23, 100, 3, 'Полулюкс');
+--MERGE INTO КОМНАТЫ VALUES (24, 75, 3, 'Стандарт');
+--MERGE INTO КОМНАТЫ VALUES (25, 50, 2, 'Стандарт');
+--MERGE INTO КОМНАТЫ VALUES (26, 100, 2, 'Люкс');
+--MERGE INTO КОМНАТЫ VALUES (27, 100, 2, 'Люкс');
+--MERGE INTO КОМНАТЫ VALUES (28, 75, 3, 'Стандарт');
+--
+--MERGE INTO КОМНАТЫ VALUES (31, 140, 3, 'Люкс');
+--MERGE INTO КОМНАТЫ VALUES (32, 180, 4, 'Люкс');
+--MERGE INTO КОМНАТЫ VALUES (33, 180, 4, 'Люкс');
+--MERGE INTO КОМНАТЫ VALUES (34, 140, 3, 'Люкс');
+--MERGE INTO КОМНАТЫ VALUES (35, 180, 4, 'Люкс');
+--
+--MERGE INTO КОМНАТЫ VALUES (41, 700, 10, 'Cуперлюкс');
+--
+--MERGE INTO ПИТАНИЕ VALUES ('нет', 0);
+--MERGE INTO ПИТАНИЕ VALUES ('завтрак', 7);
+--MERGE INTO ПИТАНИЕ VALUES ('поупансион', 20);
+--
+--MERGE INTO ДОП_УСЛУГИ VALUES ('нет', 0);
+--MERGE INTO ДОП_УСЛУГИ VALUES ('трансфер', 15);
+--MERGE INTO ДОП_УСЛУГИ VALUES ('стоянка', 12);
+--
+--MERGE INTO ПОЛЬЗОВАТЕЛИ_ROLES VALUES (1 , 2);
+--
+--COMMIT;

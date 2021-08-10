@@ -1,0 +1,11 @@
+by.rozmysl.booking
+by.rozmysl.booking.config
+by.rozmysl.booking.controllers
+by.rozmysl.booking.entity.hotel
+by.rozmysl.booking.entity.user
+by.rozmysl.booking.exception
+by.rozmysl.booking.repository.hotelRepo
+by.rozmysl.booking.repository.userRepo
+by.rozmysl.booking.service.hotelService
+by.rozmysl.booking.service.mail
+by.rozmysl.booking.service.usersService
