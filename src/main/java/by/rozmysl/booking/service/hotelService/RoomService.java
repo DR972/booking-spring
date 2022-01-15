@@ -60,9 +60,10 @@ public class RoomService {
      */
     public List<Room> findFreeRooms(Reservation form) {
         List<Room> occupiedRooms = reservationRepo.findAllByArrivalLessThanEqualAndDepartureGreaterThanEqual
-                (form.getDeparture(), form.getArrival().plusDays(1))
+                        (form.getDeparture(), form.getArrival().plusDays(1))
                 .stream().map(r -> roomRepo.findByNumber(r.getNumber())).collect(Collectors.toList());
-        return roomRepo.findAll().stream().filter(i -> !occupiedRooms.contains(i)).collect(Collectors.toList());
+        return roomRepo.findAll().stream().filter(room -> occupiedRooms.stream().noneMatch(r -> r.getNumber() == room.getNumber())).collect(Collectors.toList());
+//        return roomRepo.findAll().stream().filter(i -> !occupiedRooms.contains(i)).collect(Collectors.toList());
     }
 
     /**
