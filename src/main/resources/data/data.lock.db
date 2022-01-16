@@ -1,6 +1,6 @@
 #FileLock
-#Sat Jan 15 13:51:20 MSK 2022
-server=192.168.100.3\:58079
+#Sun Jan 16 15:10:29 MSK 2022
+server=192.168.100.3\:64563
 hostName=LAPTOP-N0Q9KDST
 method=file
-id=17e5d5ceee911f6a981f1e689a9fd1d7bf4aced07ed
+id=17e62cbbf7906ff1ce4525ea784c43b83b027046cc2
